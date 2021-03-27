@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B1EB5EB260EDB2F00BAB6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1EB5EA260EDB2F00BAB6FB /* AppDelegate.swift */; };
+		7B1EB5ED260EDB2F00BAB6FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1EB5EC260EDB2F00BAB6FB /* ViewController.swift */; };
+		7B1EB5EF260EDB3000BAB6FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1EB5EE260EDB3000BAB6FB /* Assets.xcassets */; };
+		7B1EB5F2260EDB3000BAB6FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1EB5F0260EDB3000BAB6FB /* Main.storyboard */; };
+		7B1EB5FE260EDB3000BAB6FB /* SpliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1EB5FD260EDB3000BAB6FB /* SpliceTests.swift */; };
+		7B1EB609260EDB3000BAB6FB /* SpliceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1EB608260EDB3000BAB6FB /* SpliceUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B1EB5FA260EDB3000BAB6FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EB5DF260EDB2F00BAB6FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B1EB5E6260EDB2F00BAB6FB;
+			remoteInfo = Splice;
+		};
+		7B1EB605260EDB3000BAB6FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B1EB5DF260EDB2F00BAB6FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B1EB5E6260EDB2F00BAB6FB;
+			remoteInfo = Splice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B1EB5E7260EDB2F00BAB6FB /* Splice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1EB5EA260EDB2F00BAB6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B1EB5EC260EDB2F00BAB6FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B1EB5EE260EDB3000BAB6FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B1EB5F1260EDB3000BAB6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B1EB5F3260EDB3000BAB6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B1EB5F4260EDB3000BAB6FB /* Splice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Splice.entitlements; sourceTree = "<group>"; };
+		7B1EB5F9260EDB3000BAB6FB /* SpliceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpliceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1EB5FD260EDB3000BAB6FB /* SpliceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpliceTests.swift; sourceTree = "<group>"; };
+		7B1EB5FF260EDB3000BAB6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B1EB604260EDB3000BAB6FB /* SpliceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpliceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1EB608260EDB3000BAB6FB /* SpliceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpliceUITests.swift; sourceTree = "<group>"; };
+		7B1EB60A260EDB3000BAB6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B1EB5E4260EDB2F00BAB6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B1EB5F6260EDB3000BAB6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B1EB601260EDB3000BAB6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B1EB5DE260EDB2F00BAB6FB = {
+			isa = PBXGroup;
+			children = (
+				7B1EB5E9260EDB2F00BAB6FB /* Splice */,
+				7B1EB5FC260EDB3000BAB6FB /* SpliceTests */,
+				7B1EB607260EDB3000BAB6FB /* SpliceUITests */,
+				7B1EB5E8260EDB2F00BAB6FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B1EB5E8260EDB2F00BAB6FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B1EB5E7260EDB2F00BAB6FB /* Splice.app */,
+				7B1EB5F9260EDB3000BAB6FB /* SpliceTests.xctest */,
+				7B1EB604260EDB3000BAB6FB /* SpliceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B1EB5E9260EDB2F00BAB6FB /* Splice */ = {
+			isa = PBXGroup;
+			children = (
+				7B1EB5EA260EDB2F00BAB6FB /* AppDelegate.swift */,
+				7B1EB5EC260EDB2F00BAB6FB /* ViewController.swift */,
+				7B1EB5EE260EDB3000BAB6FB /* Assets.xcassets */,
+				7B1EB5F0260EDB3000BAB6FB /* Main.storyboard */,
+				7B1EB5F3260EDB3000BAB6FB /* Info.plist */,
+				7B1EB5F4260EDB3000BAB6FB /* Splice.entitlements */,
+			);
+			path = Splice;
+			sourceTree = "<group>";
+		};
+		7B1EB5FC260EDB3000BAB6FB /* SpliceTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B1EB5FD260EDB3000BAB6FB /* SpliceTests.swift */,
+				7B1EB5FF260EDB3000BAB6FB /* Info.plist */,
+			);
+			path = SpliceTests;
+			sourceTree = "<group>";
+		};
+		7B1EB607260EDB3000BAB6FB /* SpliceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B1EB608260EDB3000BAB6FB /* SpliceUITests.swift */,
+				7B1EB60A260EDB3000BAB6FB /* Info.plist */,
+			);
+			path = SpliceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B1EB5E6260EDB2F00BAB6FB /* Splice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B1EB60D260EDB3000BAB6FB /* Build configuration list for PBXNativeTarget "Splice" */;
+			buildPhases = (
+				7B1EB5E3260EDB2F00BAB6FB /* Sources */,
+				7B1EB5E4260EDB2F00BAB6FB /* Frameworks */,
+				7B1EB5E5260EDB2F00BAB6FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Splice;
+			productName = Splice;
+			productReference = 7B1EB5E7260EDB2F00BAB6FB /* Splice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B1EB5F8260EDB3000BAB6FB /* SpliceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B1EB610260EDB3000BAB6FB /* Build configuration list for PBXNativeTarget "SpliceTests" */;
+			buildPhases = (
+				7B1EB5F5260EDB3000BAB6FB /* Sources */,
+				7B1EB5F6260EDB3000BAB6FB /* Frameworks */,
+				7B1EB5F7260EDB3000BAB6FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B1EB5FB260EDB3000BAB6FB /* PBXTargetDependency */,
+			);
+			name = SpliceTests;
+			productName = SpliceTests;
+			productReference = 7B1EB5F9260EDB3000BAB6FB /* SpliceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B1EB603260EDB3000BAB6FB /* SpliceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B1EB613260EDB3000BAB6FB /* Build configuration list for PBXNativeTarget "SpliceUITests" */;
+			buildPhases = (
+				7B1EB600260EDB3000BAB6FB /* Sources */,
+				7B1EB601260EDB3000BAB6FB /* Frameworks */,
+				7B1EB602260EDB3000BAB6FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B1EB606260EDB3000BAB6FB /* PBXTargetDependency */,
+			);
+			name = SpliceUITests;
+			productName = SpliceUITests;
+			productReference = 7B1EB604260EDB3000BAB6FB /* SpliceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B1EB5DF260EDB2F00BAB6FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7B1EB5E6260EDB2F00BAB6FB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7B1EB5F8260EDB3000BAB6FB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7B1EB5E6260EDB2F00BAB6FB;
+					};
+					7B1EB603260EDB3000BAB6FB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7B1EB5E6260EDB2F00BAB6FB;
+					};
+				};
+			};
+			buildConfigurationList = 7B1EB5E2260EDB2F00BAB6FB /* Build configuration list for PBXProject "Splice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B1EB5DE260EDB2F00BAB6FB;
+			productRefGroup = 7B1EB5E8260EDB2F00BAB6FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B1EB5E6260EDB2F00BAB6FB /* Splice */,
+				7B1EB5F8260EDB3000BAB6FB /* SpliceTests */,
+				7B1EB603260EDB3000BAB6FB /* SpliceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B1EB5E5260EDB2F00BAB6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1EB5EF260EDB3000BAB6FB /* Assets.xcassets in Resources */,
+				7B1EB5F2260EDB3000BAB6FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B1EB5F7260EDB3000BAB6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B1EB602260EDB3000BAB6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B1EB5E3260EDB2F00BAB6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1EB5ED260EDB2F00BAB6FB /* ViewController.swift in Sources */,
+				7B1EB5EB260EDB2F00BAB6FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B1EB5F5260EDB3000BAB6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1EB5FE260EDB3000BAB6FB /* SpliceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B1EB600260EDB3000BAB6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1EB609260EDB3000BAB6FB /* SpliceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B1EB5FB260EDB3000BAB6FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B1EB5E6260EDB2F00BAB6FB /* Splice */;
+			targetProxy = 7B1EB5FA260EDB3000BAB6FB /* PBXContainerItemProxy */;
+		};
+		7B1EB606260EDB3000BAB6FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B1EB5E6260EDB2F00BAB6FB /* Splice */;
+			targetProxy = 7B1EB605260EDB3000BAB6FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B1EB5F0260EDB3000BAB6FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B1EB5F1260EDB3000BAB6FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B1EB60B260EDB3000BAB6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B1EB60C260EDB3000BAB6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7B1EB60E260EDB3000BAB6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Splice/Splice.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BXUL2BU8RS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Splice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = Tema.Tian.Splice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7B1EB60F260EDB3000BAB6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Splice/Splice.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BXUL2BU8RS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Splice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = Tema.Tian.Splice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7B1EB611260EDB3000BAB6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BXUL2BU8RS;
+				INFOPLIST_FILE = SpliceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = Tema.Tian.SpliceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splice.app/Contents/MacOS/Splice";
+			};
+			name = Debug;
+		};
+		7B1EB612260EDB3000BAB6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BXUL2BU8RS;
+				INFOPLIST_FILE = SpliceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = Tema.Tian.SpliceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splice.app/Contents/MacOS/Splice";
+			};
+			name = Release;
+		};
+		7B1EB614260EDB3000BAB6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BXUL2BU8RS;
+				INFOPLIST_FILE = SpliceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tema.Tian.SpliceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Splice;
+			};
+			name = Debug;
+		};
+		7B1EB615260EDB3000BAB6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BXUL2BU8RS;
+				INFOPLIST_FILE = SpliceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tema.Tian.SpliceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Splice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B1EB5E2260EDB2F00BAB6FB /* Build configuration list for PBXProject "Splice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B1EB60B260EDB3000BAB6FB /* Debug */,
+				7B1EB60C260EDB3000BAB6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B1EB60D260EDB3000BAB6FB /* Build configuration list for PBXNativeTarget "Splice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B1EB60E260EDB3000BAB6FB /* Debug */,
+				7B1EB60F260EDB3000BAB6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B1EB610260EDB3000BAB6FB /* Build configuration list for PBXNativeTarget "SpliceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B1EB611260EDB3000BAB6FB /* Debug */,
+				7B1EB612260EDB3000BAB6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B1EB613260EDB3000BAB6FB /* Build configuration list for PBXNativeTarget "SpliceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B1EB614260EDB3000BAB6FB /* Debug */,
+				7B1EB615260EDB3000BAB6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B1EB5DF260EDB2F00BAB6FB /* Project object */;
+}
