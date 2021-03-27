@@ -1,4 +1,4 @@
-# InternationalizationAssistant
+# Internationalization Assistant
 
 iOS macOS Internationalized String Conversion Assistant
 
