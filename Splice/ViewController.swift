@@ -19,7 +19,7 @@ class ViewController: NSViewController {
   @IBOutlet weak var prefixTextField: NSTextField!
   @IBOutlet weak var copySuccessLabel: NSTextField!
   @IBOutlet weak var capitalizedButton: NSButton!
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -29,31 +29,40 @@ class ViewController: NSViewController {
     processingInput.font = NSFont.systemFont(ofSize: 14)
     prefixTextField.font = NSFont.systemFont(ofSize: 14)
   }
-  
+
   @objc func parsingText() {
+    let originString = processingInput.string
     var sting = processingInput.string
+    sting = sting.replacePattern(pattern: "？")
+    sting = sting.replacePattern(pattern: "?")
     sting = sting.replacePattern(pattern: ".")
     sting = sting.replacePattern(pattern: "。")
     sting = sting.replacePattern(pattern: ",", replaceWith: " ")
     sting = sting.replacePattern(pattern: "，", replaceWith: " ")
     var splitArray = [String]()
     if capitalizedButton.state == .on {
-      splitArray = sting.split(separator: " ").map{ $0.capitalized }
+      splitArray = sting.split(separator: " ").map { $0.capitalized }
     } else {
-      splitArray = sting.split(separator: " ").map({ String($0) })
+      splitArray = sting.split(separator: " ").map({ String($0).lowercased() })
     }
     let parsingResult = splitArray.joined(separator: "_")
     if prefixTextField.stringValue.isEmpty {
-      doneInput.string = parsingResult
+      doneInput.string = """
+      "\(parsingResult)" = "\(originString)";
+      """
       return
     }
     if capitalizedButton.state == .on {
-      doneInput.string = "\(prefixTextField.stringValue.capitalized)_\(parsingResult)"
+      doneInput.string = """
+      "\(prefixTextField.stringValue.capitalized)_\(parsingResult)" = "\(originString)";
+      """
       return
     }
-    doneInput.string = "\(prefixTextField.stringValue)_\(parsingResult)"
+    doneInput.string = """
+    "\(prefixTextField.stringValue)_\(parsingResult)" = "\(originString)";
+    """
   }
-  
+
   @objc func copyText() {
     NSPasteboard.general.clearContents()
     NSPasteboard.general.setString(doneInput.string, forType: .string)
@@ -68,12 +77,12 @@ class ViewController: NSViewController {
 
 extension String {
   func replacePattern(pattern: String, replaceWith: String = "") -> String {
-      do {
-        let regex = try NSRegularExpression(pattern: pattern, options: [.caseInsensitive, .useUnicodeWordBoundaries, .useUnixLineSeparators, .anchorsMatchLines, .dotMatchesLineSeparators, .ignoreMetacharacters, .allowCommentsAndWhitespace])
-          let range = NSMakeRange(0, self.count)
-          return regex.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: replaceWith)
-      } catch {
-          return self
-      }
+    do {
+      let regex = try NSRegularExpression(pattern: pattern, options: [.caseInsensitive, .useUnicodeWordBoundaries, .useUnixLineSeparators, .anchorsMatchLines, .dotMatchesLineSeparators, .ignoreMetacharacters, .allowCommentsAndWhitespace])
+      let range = NSMakeRange(0, self.count)
+      return regex.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: replaceWith)
+    } catch {
+      return self
+    }
   }
 }
