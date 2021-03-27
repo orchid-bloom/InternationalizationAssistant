@@ -33,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7B1EB5E7260EDB2F00BAB6FB /* Splice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1EB5E7260EDB2F00BAB6FB /* Parsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1EB5EA260EDB2F00BAB6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B1EB5EC260EDB2F00BAB6FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B1EB5EE260EDB3000BAB6FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		7B1EB5E8260EDB2F00BAB6FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B1EB5E7260EDB2F00BAB6FB /* Splice.app */,
+				7B1EB5E7260EDB2F00BAB6FB /* Parsing.app */,
 				7B1EB5F9260EDB3000BAB6FB /* SpliceTests.xctest */,
 				7B1EB604260EDB3000BAB6FB /* SpliceUITests.xctest */,
 			);
@@ -141,7 +141,7 @@
 			);
 			name = Splice;
 			productName = Splice;
-			productReference = 7B1EB5E7260EDB2F00BAB6FB /* Splice.app */;
+			productReference = 7B1EB5E7260EDB2F00BAB6FB /* Parsing.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7B1EB5F8260EDB3000BAB6FB /* SpliceTests */ = {
@@ -356,6 +356,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Parsing;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -410,6 +411,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = Parsing;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -434,7 +436,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = Tema.Tian.Splice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Parsing;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -457,7 +459,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = Tema.Tian.Splice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Parsing;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

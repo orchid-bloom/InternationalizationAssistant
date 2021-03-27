@@ -18,6 +18,7 @@ class ViewController: NSViewController {
   @IBOutlet var doneInput: NSTextView!
   @IBOutlet weak var prefixTextField: NSTextField!
   @IBOutlet weak var copySuccessLabel: NSTextField!
+  @IBOutlet weak var capitalizedButton: NSButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,10 +36,19 @@ class ViewController: NSViewController {
     sting = sting.replacePattern(pattern: "。")
     sting = sting.replacePattern(pattern: ",", replaceWith: " ")
     sting = sting.replacePattern(pattern: "，", replaceWith: " ")
-    let splitArray = sting.split(separator: " ").map{ $0.capitalized }
+    var splitArray = [String]()
+    if capitalizedButton.state == .on {
+      splitArray = sting.split(separator: " ").map{ $0.capitalized }
+    } else {
+      splitArray = sting.split(separator: " ").map({ String($0) })
+    }
     let parsingResult = splitArray.joined(separator: "_")
     if prefixTextField.stringValue.isEmpty {
       doneInput.string = parsingResult
+      return
+    }
+    if capitalizedButton.state == .on {
+      doneInput.string = "\(prefixTextField.stringValue.capitalized)_\(parsingResult)"
       return
     }
     doneInput.string = "\(prefixTextField.stringValue)_\(parsingResult)"
@@ -48,6 +58,7 @@ class ViewController: NSViewController {
     NSPasteboard.general.clearContents()
     NSPasteboard.general.setString(doneInput.string, forType: .string)
     NSPasteboard.general.string(forType: .string)
+    copySuccessLabel.stringValue = "Copy Success"
     copySuccessLabel.isHidden = false
     DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
       self.copySuccessLabel.isHidden = true

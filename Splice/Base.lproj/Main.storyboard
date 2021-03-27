@@ -675,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Splice" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Parsing" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -685,7 +685,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Internationalization Assistant" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Parsing" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -705,7 +705,7 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Splice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Parsing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="513"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -775,7 +775,7 @@
                                     </scrollView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ABN-cX-87T">
                                         <rect key="frame" x="18" y="450" width="86" height="19"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="处理文本" id="Aek-u8-JlJ">
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Original" id="Aek-u8-JlJ">
                                             <font key="font" metaFont="system" size="15"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -783,44 +783,44 @@
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c1R-DQ-AmY">
                                         <rect key="frame" x="18" y="239" width="106" height="17"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="已处理文本" id="NJ7-e1-em2">
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Process Result" id="NJ7-e1-em2">
                                             <font key="font" metaFont="system" size="14"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E8B-ZB-j3e">
-                                        <rect key="frame" x="140" y="450" width="35" height="19"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="前缀" id="QuH-ru-nXM">
+                                        <rect key="frame" x="140" y="450" width="44" height="19"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Prefix" id="QuH-ru-nXM">
                                             <font key="font" metaFont="system" size="15"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LB2-p9-Zoj">
-                                        <rect key="frame" x="744" y="430" width="36" height="60"/>
+                                        <rect key="frame" x="736" y="430" width="44" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="SQK-TA-4Oh"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="roundRect" title="解析" bezelStyle="roundedRect" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="LKc-XV-lnM">
+                                        <buttonCell key="cell" type="roundRect" title="Parse" bezelStyle="roundedRect" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="LKc-XV-lnM">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="15"/>
                                         </buttonCell>
                                         <color key="contentTintColor" name="windowFrameTextColor" catalog="System" colorSpace="catalog"/>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ERo-0h-kiv">
-                                        <rect key="frame" x="744" y="218" width="36" height="60"/>
+                                        <rect key="frame" x="738" y="218" width="40" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="JMu-Ia-Sfi"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="roundRect" title="复制" bezelStyle="roundedRect" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="gGD-XQ-Vqj">
+                                        <buttonCell key="cell" type="roundRect" title="Copy" bezelStyle="roundedRect" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="gGD-XQ-Vqj">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="15"/>
                                         </buttonCell>
                                         <color key="contentTintColor" name="windowFrameTextColor" catalog="System" colorSpace="catalog"/>
                                     </button>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v1I-ye-pNa">
-                                        <rect key="frame" x="198" y="447" width="200" height="25"/>
+                                        <rect key="frame" x="207" y="447" width="200" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="fXn-Ph-jIs"/>
                                             <constraint firstAttribute="width" constant="200" id="koe-3n-GdC"/>
@@ -842,8 +842,17 @@
                                             <color key="backgroundColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lI8-6H-Hvj">
+                                        <rect key="frame" x="435" y="451" width="92" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Uppercase" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Zv2-9i-qPI">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="lI8-6H-Hvj" firstAttribute="centerY" secondItem="v1I-ye-pNa" secondAttribute="centerY" id="0lz-OL-eR9"/>
+                                    <constraint firstItem="lI8-6H-Hvj" firstAttribute="leading" secondItem="v1I-ye-pNa" secondAttribute="trailing" constant="30" id="58p-OX-upN"/>
                                     <constraint firstItem="Jsm-j6-xPq" firstAttribute="leading" secondItem="C5T-Wp-793" secondAttribute="leading" constant="15" id="6mL-kb-yGe"/>
                                     <constraint firstItem="LB2-p9-Zoj" firstAttribute="centerY" secondItem="ABN-cX-87T" secondAttribute="centerY" id="DQv-R9-xM2"/>
                                     <constraint firstAttribute="bottom" secondItem="Jsm-j6-xPq" secondAttribute="bottom" constant="20" id="DcO-og-hgv"/>
@@ -851,6 +860,7 @@
                                     <constraint firstItem="swB-iO-OvO" firstAttribute="top" secondItem="ABN-cX-87T" secondAttribute="bottom" constant="19" id="ELq-1y-zal"/>
                                     <constraint firstItem="v1I-ye-pNa" firstAttribute="leading" secondItem="E8B-ZB-j3e" secondAttribute="trailing" constant="25" id="FcB-py-d9k"/>
                                     <constraint firstAttribute="trailing" secondItem="swB-iO-OvO" secondAttribute="trailing" constant="15" id="G1k-ar-bhD"/>
+                                    <constraint firstItem="LB2-p9-Zoj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lI8-6H-Hvj" secondAttribute="trailing" constant="8" symbolic="YES" id="Iat-LX-tAN"/>
                                     <constraint firstItem="c1R-DQ-AmY" firstAttribute="top" secondItem="swB-iO-OvO" secondAttribute="bottom" constant="25" id="LJB-nv-q78"/>
                                     <constraint firstAttribute="trailing" secondItem="ABN-cX-87T" secondAttribute="trailing" constant="698" id="Mj6-iL-3HX"/>
                                     <constraint firstItem="E8B-ZB-j3e" firstAttribute="centerY" secondItem="ABN-cX-87T" secondAttribute="centerY" id="Pjx-Yv-rRx"/>
@@ -881,6 +891,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroudView" destination="C5T-Wp-793" id="WJK-yI-imR"/>
+                        <outlet property="capitalizedButton" destination="lI8-6H-Hvj" id="czV-rR-Kgg"/>
                         <outlet property="copyButton" destination="ERo-0h-kiv" id="gwA-nY-BkK"/>
                         <outlet property="copySuccessLabel" destination="gwj-AM-suX" id="Wiu-6q-DBD"/>
                         <outlet property="doneInput" destination="rHN-l9-yyV" id="M4n-y4-Tsx"/>
